@@ -1,0 +1,234 @@
+Name:               gke-masterme-default-pool-881b35a2-08h5
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/fluentd-ds-ready=true
+                    beta.kubernetes.io/instance-type=g1-small
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-nodepool=default-pool
+                    failure-domain.beta.kubernetes.io/region=asia-south1
+                    failure-domain.beta.kubernetes.io/zone=asia-south1-a
+                    kubernetes.io/hostname=gke-masterme-default-pool-881b35a2-08h5
+Annotations:        node.alpha.kubernetes.io/ttl=0
+                    volumes.kubernetes.io/controller-managed-attach-detach=true
+Taints:             <none>
+CreationTimestamp:  Wed, 29 Aug 2018 02:30:23 +0530
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  KernelDeadlock       False   Wed, 29 Aug 2018 03:00:40 +0530   Wed, 29 Aug 2018 02:29:22 +0530   KernelHasNoDeadlock          kernel has no deadlock
+  NetworkUnavailable   False   Wed, 29 Aug 2018 02:30:33 +0530   Wed, 29 Aug 2018 02:30:33 +0530   RouteCreated                 RouteController created a route
+  OutOfDisk            False   Wed, 29 Aug 2018 03:00:57 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasSufficientDisk     kubelet has sufficient disk space available
+  MemoryPressure       False   Wed, 29 Aug 2018 03:00:57 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Wed, 29 Aug 2018 03:00:57 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Wed, 29 Aug 2018 03:00:57 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Wed, 29 Aug 2018 03:00:57 +0530   Wed, 29 Aug 2018 02:30:43 +0530   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.160.0.3
+  ExternalIP:  35.200.185.206
+  Hostname:    gke-masterme-default-pool-881b35a2-08h5
+Capacity:
+ cpu:                1
+ ephemeral-storage:  47259264Ki
+ hugepages-2Mi:      0
+ memory:             1735972Ki
+ pods:               110
+Allocatable:
+ cpu:                940m
+ ephemeral-storage:  18858075679
+ hugepages-2Mi:      0
+ memory:             1188132Ki
+ pods:               110
+System Info:
+ Machine ID:                 c5b6b8a0e6e8dbd18a4f9141b22813d4
+ System UUID:                C5B6B8A0-E6E8-DBD1-8A4F-9141B22813D4
+ Boot ID:                    f2879ad6-d9c5-4a0b-9d03-adcbf0343a91
+ Kernel Version:             4.14.22+
+ OS Image:                   Container-Optimized OS from Google
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://17.3.2
+ Kubelet Version:            v1.10.4-gke.3
+ Kube-Proxy Version:         v1.10.4-gke.3
+PodCIDR:                     10.12.2.0/24
+ExternalID:                  5618252902589532512
+Non-terminated Pods:         (3 in total)
+  Namespace                  Name                                                  CPU Requests  CPU Limits  Memory Requests  Memory Limits
+  ---------                  ----                                                  ------------  ----------  ---------------  -------------
+  kube-system                fluentd-gcp-v3.0.0-jhvw2                              100m (10%)    0 (0%)      200Mi (17%)      300Mi (25%)
+  kube-system                kube-dns-788979dc8f-qt2n7                             260m (27%)    0 (0%)      110Mi (9%)       170Mi (14%)
+  kube-system                kube-proxy-gke-masterme-default-pool-881b35a2-08h5    100m (10%)    0 (0%)      0 (0%)           0 (0%)
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  CPU Requests  CPU Limits  Memory Requests  Memory Limits
+  ------------  ----------  ---------------  -------------
+  460m (48%)    0 (0%)      310Mi (26%)      470Mi (40%)
+Events:
+  Type    Reason                   Age   From                                                 Message
+  ----    ------                   ----  ----                                                 -------
+  Normal  Starting                 30m   kubelet, gke-masterme-default-pool-881b35a2-08h5     Starting kubelet.
+  Normal  NodeHasSufficientDisk    30m   kubelet, gke-masterme-default-pool-881b35a2-08h5     Node gke-masterme-default-pool-881b35a2-08h5 status is now: NodeHasSufficientDisk
+  Normal  NodeHasSufficientMemory  30m   kubelet, gke-masterme-default-pool-881b35a2-08h5     Node gke-masterme-default-pool-881b35a2-08h5 status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    30m   kubelet, gke-masterme-default-pool-881b35a2-08h5     Node gke-masterme-default-pool-881b35a2-08h5 status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     30m   kubelet, gke-masterme-default-pool-881b35a2-08h5     Node gke-masterme-default-pool-881b35a2-08h5 status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  30m   kubelet, gke-masterme-default-pool-881b35a2-08h5     Updated Node Allocatable limit across pods
+  Normal  Starting                 30m   kube-proxy, gke-masterme-default-pool-881b35a2-08h5  Starting kube-proxy.
+  Normal  NodeReady                30m   kubelet, gke-masterme-default-pool-881b35a2-08h5     Node gke-masterme-default-pool-881b35a2-08h5 status is now: NodeReady
+
+
+Name:               gke-masterme-default-pool-881b35a2-7bgz
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/fluentd-ds-ready=true
+                    beta.kubernetes.io/instance-type=g1-small
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-nodepool=default-pool
+                    failure-domain.beta.kubernetes.io/region=asia-south1
+                    failure-domain.beta.kubernetes.io/zone=asia-south1-a
+                    kubernetes.io/hostname=gke-masterme-default-pool-881b35a2-7bgz
+Annotations:        node.alpha.kubernetes.io/ttl=0
+                    volumes.kubernetes.io/controller-managed-attach-detach=true
+Taints:             <none>
+CreationTimestamp:  Wed, 29 Aug 2018 02:30:23 +0530
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  KernelDeadlock       False   Wed, 29 Aug 2018 03:00:46 +0530   Wed, 29 Aug 2018 02:29:23 +0530   KernelHasNoDeadlock          kernel has no deadlock
+  NetworkUnavailable   False   Wed, 29 Aug 2018 02:30:37 +0530   Wed, 29 Aug 2018 02:30:37 +0530   RouteCreated                 RouteController created a route
+  OutOfDisk            False   Wed, 29 Aug 2018 03:01:07 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasSufficientDisk     kubelet has sufficient disk space available
+  MemoryPressure       False   Wed, 29 Aug 2018 03:01:07 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Wed, 29 Aug 2018 03:01:07 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Wed, 29 Aug 2018 03:01:07 +0530   Wed, 29 Aug 2018 02:30:23 +0530   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Wed, 29 Aug 2018 03:01:07 +0530   Wed, 29 Aug 2018 02:30:43 +0530   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.160.0.2
+  ExternalIP:  35.200.239.85
+  Hostname:    gke-masterme-default-pool-881b35a2-7bgz
+Capacity:
+ cpu:                1
+ ephemeral-storage:  47259264Ki
+ hugepages-2Mi:      0
+ memory:             1735972Ki
+ pods:               110
+Allocatable:
+ cpu:                940m
+ ephemeral-storage:  18858075679
+ hugepages-2Mi:      0
+ memory:             1188132Ki
+ pods:               110
+System Info:
+ Machine ID:                 4737159f5e60b09074059b2011faf192
+ System UUID:                4737159F-5E60-B090-7405-9B2011FAF192
+ Boot ID:                    ad361165-3db5-42ff-b012-669d6fc38e9b
+ Kernel Version:             4.14.22+
+ OS Image:                   Container-Optimized OS from Google
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://17.3.2
+ Kubelet Version:            v1.10.4-gke.3
+ Kube-Proxy Version:         v1.10.4-gke.3
+PodCIDR:                     10.12.1.0/24
+ExternalID:                  6415685543268976992
+Non-terminated Pods:         (6 in total)
+  Namespace                  Name                                                  CPU Requests  CPU Limits  Memory Requests  Memory Limits
+  ---------                  ----                                                  ------------  ----------  ---------------  -------------
+  kube-system                event-exporter-v0.2.1-5f5b89fcc8-x5hgv                0 (0%)        0 (0%)      0 (0%)           0 (0%)
+  kube-system                fluentd-gcp-v3.0.0-676cm                              100m (10%)    0 (0%)      200Mi (17%)      300Mi (25%)
+  kube-system                heapster-v1.5.3-69db9dc7bc-dclrl                      138m (14%)    138m (14%)  301856Ki (25%)   301856Ki (25%)
+  kube-system                kube-dns-autoscaler-79b4b844b9-kgs6l                  20m (2%)      0 (0%)      10Mi (0%)        0 (0%)
+  kube-system                kube-proxy-gke-masterme-default-pool-881b35a2-7bgz    100m (10%)    0 (0%)      0 (0%)           0 (0%)
+  kube-system                metrics-server-v0.2.1-7486f5bd67-snbcx                53m (5%)      148m (15%)  154Mi (13%)      404Mi (34%)
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  CPU Requests  CPU Limits  Memory Requests  Memory Limits
+  ------------  ----------  ---------------  -------------
+  411m (43%)    286m (30%)  674592Ki (56%)   1022752Ki (86%)
+Events:
+  Type    Reason                   Age   From                                                 Message
+  ----    ------                   ----  ----                                                 -------
+  Normal  Starting                 30m   kubelet, gke-masterme-default-pool-881b35a2-7bgz     Starting kubelet.
+  Normal  NodeHasSufficientDisk    30m   kubelet, gke-masterme-default-pool-881b35a2-7bgz     Node gke-masterme-default-pool-881b35a2-7bgz status is now: NodeHasSufficientDisk
+  Normal  NodeHasSufficientMemory  30m   kubelet, gke-masterme-default-pool-881b35a2-7bgz     Node gke-masterme-default-pool-881b35a2-7bgz status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    30m   kubelet, gke-masterme-default-pool-881b35a2-7bgz     Node gke-masterme-default-pool-881b35a2-7bgz status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     30m   kubelet, gke-masterme-default-pool-881b35a2-7bgz     Node gke-masterme-default-pool-881b35a2-7bgz status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  30m   kubelet, gke-masterme-default-pool-881b35a2-7bgz     Updated Node Allocatable limit across pods
+  Normal  Starting                 30m   kube-proxy, gke-masterme-default-pool-881b35a2-7bgz  Starting kube-proxy.
+  Normal  NodeReady                30m   kubelet, gke-masterme-default-pool-881b35a2-7bgz     Node gke-masterme-default-pool-881b35a2-7bgz status is now: NodeReady
+
+
+Name:               gke-masterme-default-pool-881b35a2-gc8r
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/fluentd-ds-ready=true
+                    beta.kubernetes.io/instance-type=g1-small
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-nodepool=default-pool
+                    failure-domain.beta.kubernetes.io/region=asia-south1
+                    failure-domain.beta.kubernetes.io/zone=asia-south1-a
+                    kubernetes.io/hostname=gke-masterme-default-pool-881b35a2-gc8r
+Annotations:        node.alpha.kubernetes.io/ttl=0
+                    volumes.kubernetes.io/controller-managed-attach-detach=true
+Taints:             <none>
+CreationTimestamp:  Wed, 29 Aug 2018 02:30:22 +0530
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  KernelDeadlock       False   Wed, 29 Aug 2018 03:00:46 +0530   Wed, 29 Aug 2018 02:29:25 +0530   KernelHasNoDeadlock          kernel has no deadlock
+  NetworkUnavailable   False   Wed, 29 Aug 2018 02:30:36 +0530   Wed, 29 Aug 2018 02:30:36 +0530   RouteCreated                 RouteController created a route
+  OutOfDisk            False   Wed, 29 Aug 2018 03:01:06 +0530   Wed, 29 Aug 2018 02:30:22 +0530   KubeletHasSufficientDisk     kubelet has sufficient disk space available
+  MemoryPressure       False   Wed, 29 Aug 2018 03:01:06 +0530   Wed, 29 Aug 2018 02:30:22 +0530   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Wed, 29 Aug 2018 03:01:06 +0530   Wed, 29 Aug 2018 02:30:22 +0530   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Wed, 29 Aug 2018 03:01:06 +0530   Wed, 29 Aug 2018 02:30:22 +0530   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Wed, 29 Aug 2018 03:01:06 +0530   Wed, 29 Aug 2018 02:30:43 +0530   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.160.0.4
+  ExternalIP:  35.200.221.232
+  Hostname:    gke-masterme-default-pool-881b35a2-gc8r
+Capacity:
+ cpu:                1
+ ephemeral-storage:  47259264Ki
+ hugepages-2Mi:      0
+ memory:             1735972Ki
+ pods:               110
+Allocatable:
+ cpu:                940m
+ ephemeral-storage:  18858075679
+ hugepages-2Mi:      0
+ memory:             1188132Ki
+ pods:               110
+System Info:
+ Machine ID:                 79758fd44cf2d1a4b30f4b3d6758eee1
+ System UUID:                79758FD4-4CF2-D1A4-B30F-4B3D6758EEE1
+ Boot ID:                    ddc52878-1813-4836-b982-64773f723c3a
+ Kernel Version:             4.14.22+
+ OS Image:                   Container-Optimized OS from Google
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://17.3.2
+ Kubelet Version:            v1.10.4-gke.3
+ Kube-Proxy Version:         v1.10.4-gke.3
+PodCIDR:                     10.12.0.0/24
+ExternalID:                  4697371146497558880
+Non-terminated Pods:         (5 in total)
+  Namespace                  Name                                                  CPU Requests  CPU Limits  Memory Requests  Memory Limits
+  ---------                  ----                                                  ------------  ----------  ---------------  -------------
+  kube-system                fluentd-gcp-scaler-7c5db745fc-57mb7                   0 (0%)        0 (0%)      0 (0%)           0 (0%)
+  kube-system                fluentd-gcp-v3.0.0-72dwr                              100m (10%)    0 (0%)      200Mi (17%)      300Mi (25%)
+  kube-system                kube-dns-788979dc8f-4ljd8                             260m (27%)    0 (0%)      110Mi (9%)       170Mi (14%)
+  kube-system                kube-proxy-gke-masterme-default-pool-881b35a2-gc8r    100m (10%)    0 (0%)      0 (0%)           0 (0%)
+  kube-system                l7-default-backend-5d5b9874d5-xwkc5                   10m (1%)      10m (1%)    20Mi (1%)        20Mi (1%)
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  CPU Requests  CPU Limits  Memory Requests  Memory Limits
+  ------------  ----------  ---------------  -------------
+  470m (50%)    10m (1%)    330Mi (28%)      490Mi (42%)
+Events:
+  Type    Reason                   Age   From                                                 Message
+  ----    ------                   ----  ----                                                 -------
+  Normal  Starting                 30m   kubelet, gke-masterme-default-pool-881b35a2-gc8r     Starting kubelet.
+  Normal  NodeHasSufficientDisk    30m   kubelet, gke-masterme-default-pool-881b35a2-gc8r     Node gke-masterme-default-pool-881b35a2-gc8r status is now: NodeHasSufficientDisk
+  Normal  NodeHasSufficientMemory  30m   kubelet, gke-masterme-default-pool-881b35a2-gc8r     Node gke-masterme-default-pool-881b35a2-gc8r status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    30m   kubelet, gke-masterme-default-pool-881b35a2-gc8r     Node gke-masterme-default-pool-881b35a2-gc8r status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     30m   kubelet, gke-masterme-default-pool-881b35a2-gc8r     Node gke-masterme-default-pool-881b35a2-gc8r status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  30m   kubelet, gke-masterme-default-pool-881b35a2-gc8r     Updated Node Allocatable limit across pods
+  Normal  Starting                 30m   kube-proxy, gke-masterme-default-pool-881b35a2-gc8r  Starting kube-proxy.
+  Normal  NodeReady                30m   kubelet, gke-masterme-default-pool-881b35a2-gc8r     Node gke-masterme-default-pool-881b35a2-gc8r status is now: NodeReady
