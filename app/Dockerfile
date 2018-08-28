@@ -1,0 +1,9 @@
+FROM node:10-alpine
+
+RUN apk add --no-cache make gcc g++ python git
+
+RUN mkdir -p /usr/src/app
+
+COPY index.js /usr/src/app
+
+WORKDIR /usr/src/app
